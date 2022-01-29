@@ -1,0 +1,21 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.vw100 {
+  width: 100vw;
+}
+
+.vh100 {
+  height: 100vh;
+}
