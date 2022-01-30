@@ -1,0 +1,21 @@
+@import url(/CSS/global.css);
+
+html {
+  color: rgba(var(--black), 0.85);
+}
+
+.avatar {
+  padding: 7px 10px;
+}
+
+.avatar_div {
+  color: white;
+  font-weight: 500;
+  margin: auto;
+}
+
+.avatar_i {
+  margin: auto;
+  font-size: inherit;
+  color: inherit;
+}
