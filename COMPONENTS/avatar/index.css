@@ -4,18 +4,22 @@ html {
   color: rgba(var(--black), 0.85);
 }
 
-.avatar {
-  padding: 7px 10px;
-}
-
 .avatar_div {
   color: white;
   font-weight: 500;
-  margin: auto;
+  margin: 7px 10px;
+  width: 80px;
 }
 
-.avatar_i {
+.avatar_div > i {
   margin: auto;
   font-size: inherit;
   color: inherit;
+}
+
+.avatar_div > img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  border-radius: inherit;
 }
