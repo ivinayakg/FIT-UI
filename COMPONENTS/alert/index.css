@@ -7,10 +7,6 @@
   --info: rgba(59, 130, 246, 0.75);
 }
 
-.container {
-  flex-direction: column;
-}
-
 .alert {
   color: white;
   padding: 1rem;
