@@ -1,0 +1,65 @@
+@import url(/CSS/global.css);
+
+:root {
+  --danger: rgba(255, 59, 48, 0.75);
+  --success: rgba(16, 185, 129, 0.75);
+  --warning: rgba(245, 158, 11, 0.75);
+  --info: rgba(59, 130, 246, 0.75);
+}
+
+.container {
+  flex-direction: column;
+}
+
+.alert {
+  color: white;
+  padding: 1rem;
+  background-color: rgba(var(--black), 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 45vw;
+}
+
+.alert--heading {
+  align-items: flex-start;
+}
+
+.alert--danger {
+  color: var(--danger);
+  outline: 2.5px solid var(--danger);
+}
+.alert--success {
+  color: var(--success);
+  outline: 2.5px solid var(--success);
+}
+.alert--info {
+  color: var(--info);
+  outline: 2.5px solid var(--info);
+}
+.alert--warning {
+  color: var(--warning);
+  outline: 2.5px solid var(--warning);
+}
+
+.alert_icon {
+  height: 100%;
+  width: auto;
+  color: inherit;
+}
+
+.alert_message {
+  width: 100%;
+  color: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.alert_button {
+  background-color: transparent;
+  color: white;
+  padding: 0rem;
+  transition: none;
+}
