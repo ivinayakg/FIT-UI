@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css";
+@import url(./utility.css);
 
 :root {
   font-family: Poppins;
@@ -31,10 +33,34 @@ a {
   text-decoration: none;
 }
 
+/* button starts here */
 button {
-  border: none;
   cursor: pointer;
+  border: none;
+  color: white;
+  padding: 0.3em 0.55em;
+  font-size: 1.2rem;
+  transition: ease 500ms;
 }
+
+.btn-pri {
+  background-color: rgba(var(--primary), 1);
+}
+.btn-pri:hover {
+  background-color: rgba(var(--primary), 0.7);
+}
+
+.btn-sec {
+  background-color: rgba(var(--secondary), 1);
+}
+.btn-sec:hover {
+  background-color: rgba(var(--secondary), 0.7);
+}
+
+button:disabled {
+  opacity: 0.4;
+}
+/* button ends here */
 
 hr {
   border: 0;
@@ -44,9 +70,20 @@ hr {
 img {
   max-width: 100%;
 }
-/* reset css ends here */
 
-/* typography starts */
+/* basic borders needed */
+.bd-none {
+  border: none;
+}
+
+.bd-def {
+  border: 1.5px solid rgba(var(--black), 0.75);
+}
+.bd-pri {
+  border: 1.5px solid rgba(var(--primary), 0.75);
+}
+
+/* basic borders needed */
 
 /* heading */
 .head1 {
@@ -92,6 +129,23 @@ img {
   line-height: 1rem;
 }
 
+/* text-font sizes */
+.t1 {
+  font-size: 3rem;
+}
+.t2 {
+  font-size: 2rem;
+}
+.t3 {
+  font-size: 1.5rem;
+}
+.t4 {
+  font-size: 1rem;
+}
+.t5 {
+  font-size: 0.5rem;
+}
+
 /* font-weight */
 .text-light {
   font-weight: 300;
@@ -129,11 +183,6 @@ img {
   border-radius: 999px;
 }
 /* border radius ends here*/
-
-/* button starts here */
-button {
-}
-/* button ends here */
 
 /* forms input fields  */
 
@@ -174,4 +223,5 @@ input:invalid {
   align-items: center;
   max-width: 1150px;
   margin: 0rem auto;
+  height: max-content;
 }

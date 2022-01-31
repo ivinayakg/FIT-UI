@@ -216,3 +216,19 @@
 }
 
 /* margin and padding ends here */
+
+/* transition starts here */
+
+.all-transition {
+  transition: ease 500ms;
+}
+
+.scale-transform {
+  transform: scale(1.08);
+}
+
+.up-transform {
+  transform: translateY(-8px);
+}
+
+/* transition ends here */
