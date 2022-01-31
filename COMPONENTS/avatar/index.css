@@ -1,0 +1,27 @@
+@import url(/CSS/global.css);
+
+html {
+  color: rgba(var(--black), 0.85);
+}
+
+.avatar_div {
+  color: white;
+  font-weight: 500;
+  margin: 7px 10px;
+  width: max-content;
+  position: relative;
+}
+
+.avatar_div > i {
+  margin: auto;
+  font-size: inherit;
+  color: inherit;
+}
+
+.avatar_div > img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  max-width: 80px;
+  border-radius: inherit;
+}
