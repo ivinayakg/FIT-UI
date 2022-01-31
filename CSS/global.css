@@ -18,6 +18,10 @@
   --xxl: 1536px; /* max screen */
 }
 
+html {
+  color: rgba(var(--black), 0.85);
+}
+
 /* reset css starts */
 * {
   margin: 0;

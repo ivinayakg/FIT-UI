@@ -223,11 +223,11 @@
   transition: ease 500ms;
 }
 
-.scale-transform {
+.scale-transform:hover {
   transform: scale(1.08);
 }
 
-.up-transform {
+.up-transform:hover {
   transform: translateY(-8px);
 }
 
