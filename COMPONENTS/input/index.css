@@ -1,0 +1,30 @@
+@import url(/CSS/global.css);
+
+.input--comp {
+  position: relative;
+  width: max-content;
+  padding: 6px 9px;
+  border: none;
+  border-bottom: 1.5px solid rgba(var(--gray-light), 1);
+}
+.input--border {
+  border: 1.5px solid rgba(var(--gray-light), 1);
+}
+
+.input--comp:focus {
+  outline: none;
+}
+
+.input--comp:invalid {
+  border-color: rgba(var(--red), 0.9);
+  background-color: rgba(var(--red), 0.1);
+}
+
+.input--valid {
+  border-color: rgba(var(--primary), 0.9);
+  background-color: rgba(var(--primary), 0.2);
+}
+
+.input--comp:focus {
+  background-color: rgba(var(--black), 0.1);
+}
