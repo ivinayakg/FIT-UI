@@ -1,0 +1,193 @@
+@import url(/CSS/global.css);
+
+.card {
+  justify-self: center;
+  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  background-color: white;
+  flex-direction: column;
+  width: 20rem;
+  display: flex;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  transition: none;
+}
+
+.card_imggradient {
+  height: 12rem;
+  width: 100%;
+}
+
+.card--gradient .card_imggradient {
+  display: inline-block;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.9) 40%
+  );
+}
+.card--gradient .card_imggradient_img {
+  opacity: 0.8;
+}
+
+.card .card_imggradient_img {
+  border-radius: 0.3rem 0.3rem 0rem 0rem;
+  width: 100%;
+  height: 12rem;
+  min-height: 100%;
+}
+
+.card_header {
+  padding: 0.5rem 1rem;
+  align-self: flex-start;
+  z-index: 10;
+}
+
+.card_header h3 {
+  font-size: 1.4rem;
+  margin: 0.3rem 0rem 0rem;
+}
+.card_header h4 {
+  font-size: 0.9rem;
+  color: gray;
+  font-weight: 500;
+}
+
+.card_content {
+  padding: 0.25rem 1rem;
+  font-size: 0.8rem;
+  color: gray;
+  font-weight: 400;
+}
+
+.card_btnBox {
+  padding: 0.5rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+}
+
+.card_btnBox_box1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card_btnBox_box1 > * {
+  color: blueviolet;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.card_btnBox_box2 {
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card_btnBox_box2 > * {
+  font-size: 1rem;
+  background-color: transparent;
+  color: gray;
+}
+
+.card .card_imggradient_img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card--text-over {
+  display: grid;
+  grid-template-areas: "overflow" "content" "buttons";
+}
+
+.card--text-over .card_imggradient {
+  grid-area: overflow;
+  height: 12rem;
+  min-height: calc(100% + 1rem);
+}
+.card--text-over .card_header {
+  grid-area: overflow;
+  color: white;
+  align-self: flex-end;
+  margin-bottom: 1rem;
+}
+
+.card--text-over .card_header h4 {
+  color: white;
+}
+
+.card--text-over .card_content {
+  padding: 1rem 1rem 0.5rem;
+}
+
+.card--header {
+  display: grid;
+  grid-template-areas: "header" "img" "content" "buttons";
+}
+
+.card--header .card_header {
+  grid-area: header;
+}
+.card--header .card_imggradient {
+  border-radius: 0rem;
+  margin-right: 0.5rem 0rem;
+}
+
+.card--header .card_imggradient_img {
+  border-radius: 0rem;
+  height: 100%;
+}
+.card--header .card_content {
+  padding: 1rem 1rem 0.5rem;
+}
+
+.card--icons .card_btnBox_box1 {
+  display: none;
+}
+
+.card--buttons .card_btnBox_box2 {
+  display: none;
+}
+
+.card--horizontal {
+  display: grid;
+  grid-template-areas: "img header header" "button button button";
+}
+.card--horizontal .card_imggradient {
+  grid-area: img;
+  height: 8rem;
+}
+.card--horizontal .card_imggradient_img {
+  border-radius: 0.3rem 0rem 0rem;
+  object-fit: cover;
+  height: 100%;
+}
+
+.card--horizontal .card_header {
+  grid-area: header;
+  align-self: center;
+}
+.card--horizontal .card_content {
+  display: none;
+}
+
+.card--horizontal .card_btnBox {
+  grid-area: button;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: var(--md)) {
+  html {
+    font-size: 80%;
+  }
+}
