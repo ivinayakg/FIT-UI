@@ -1,0 +1,14 @@
+@import url(/CSS/global.css);
+
+.image--comp {
+  object-fit: contain;
+  width: 100%;
+  position: relative;
+}
+
+.image--cover {
+  object-fit: cover;
+}
+.image--fill {
+  object-fit: fill;
+}
