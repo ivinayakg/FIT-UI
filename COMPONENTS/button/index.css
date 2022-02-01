@@ -1,1 +1,56 @@
 @import url(/CSS/global.css);
+button {
+  cursor: pointer;
+  border: none;
+  color: white;
+  padding: 0.3em 0.55em;
+  font-size: 1.2rem;
+  transition: ease 500ms;
+}
+
+.btn--pri {
+  background-color: rgba(var(--primary), 1);
+  border-color: rgba(var(--primary), 1);
+}
+.btn--pri:hover {
+  background-color: rgba(var(--primary), 0.8);
+}
+
+.btn--sec {
+  background-color: rgba(var(--secondary), 1);
+  border-color: rgba(var(--secondary), 1);
+}
+.btn--sec:hover {
+  background-color: rgba(var(--secondary), 0.8);
+}
+
+button:disabled {
+  opacity: 0.4;
+}
+
+.btn--pri.btn--empty {
+  background-color: transparent;
+  color: rgba(var(--primary), 1);
+}
+.btn--pri.btn--outline {
+  background-color: transparent;
+  border: 1.5px solid rgba(var(--primary), 1);
+  color: rgba(var(--primary), 1);
+}
+.btn--pri.btn--outline:hover {
+  background-color: rgba(var(--primary), 0.15);
+}
+
+.btn--sec.btn--empty {
+  background-color: transparent;
+  color: rgba(var(--secondary), 1);
+}
+.btn--sec.btn--outline {
+  background-color: transparent;
+  border: 1.5px solid rgba(var(--secondary), 1);
+  color: rgba(var(--secondary), 1);
+}
+
+.btn--sec.btn--outline:hover {
+  background-color: rgba(var(--secondary), 0.15);
+}
