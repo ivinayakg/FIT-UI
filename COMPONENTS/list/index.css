@@ -1,0 +1,62 @@
+@import url(/CSS/global.css);
+
+.container {
+  align-items: start;
+}
+
+.list_comp {
+  margin: 0rem;
+  padding: 0.8rem;
+  text-align: left;
+  height: max-content;
+  transition: all ease 250ms;
+}
+
+.list_comp--row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.list_heading {
+  padding: 4.5px 3rem 4.5px 11px;
+}
+
+.list_item {
+  padding: 4.5px 11px;
+  cursor: default;
+  color: inherit;
+  width: 100%;
+  transition: ease 250ms;
+}
+
+.list_item:hover {
+  background-color: rgba(230, 214, 214, 0.1);
+}
+.list_item:focus-visible {
+  background-color: rgba(230, 214, 214, 0.1);
+}
+
+.list_comp--last-border {
+  border-bottom: 1.5px solid rgba(var(--black), 0.25);
+}
+
+.list_item-wrapper {
+  transition: ease 250ms;
+  opacity: 0%;
+}
+
+.list_comp--dropdown-active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list_comp--dropdown-active .list_item-wrapper {
+  height: max-content;
+  display: block;
+  align-self: flex-start;
+  opacity: 100%;
+}

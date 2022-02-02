@@ -1,0 +1,79 @@
+@import url(/CSS/global.css);
+
+/* heading */
+.head1 {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+.head2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.head3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.head4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.head5 {
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+/* text */
+.text1 {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+.text2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.text3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.text5 {
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+/* text-font sizes */
+.t1 {
+  font-size: 3rem;
+}
+.t2 {
+  font-size: 2rem;
+}
+.t3 {
+  font-size: 1.5rem;
+}
+.t4 {
+  font-size: 1rem;
+}
+.t5 {
+  font-size: 0.5rem;
+}
+
+/* font-weight */
+.text-light {
+  font-weight: 300;
+}
+.text-regular {
+  font-weight: 400;
+}
+.text-semibold {
+  font-weight: 600;
+}
+.text-bold {
+  font-weight: 700;
+}
+.text-black {
+  font-weight: 900;
+}
