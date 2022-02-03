@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css";
-@import url(./utility.css);
 
 :root {
   font-family: Poppins;
@@ -26,7 +25,7 @@ html {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 ul {
@@ -38,6 +37,7 @@ a {
 }
 
 /* button starts here */
+/* button css styles are changed in the button component css file --------------------------------------------------- */
 button {
   cursor: pointer;
   border: none;
@@ -51,14 +51,14 @@ button {
   background-color: rgba(var(--primary), 1);
 }
 .btn-pri:hover {
-  background-color: rgba(var(--primary), 0.7);
+  background-color: rgba(var(--primary), 0.8);
 }
 
 .btn-sec {
   background-color: rgba(var(--secondary), 1);
 }
 .btn-sec:hover {
-  background-color: rgba(var(--secondary), 0.7);
+  background-color: rgba(var(--secondary), 0.8);
 }
 
 button:disabled {
@@ -190,6 +190,7 @@ img {
 
 /* forms input fields  */
 
+/* update the below input from components input folder ----------------------------------------------------------*/
 .input {
   position: relative;
   width: max-content;
@@ -226,6 +227,7 @@ input:invalid {
   justify-content: center;
   align-items: center;
   max-width: 1150px;
-  margin: 0rem auto;
+  margin: unset auto;
   height: max-content;
 }
+@import url(./utility.css);
