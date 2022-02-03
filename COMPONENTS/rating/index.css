@@ -1,19 +1,10 @@
 @import url(/CSS/global.css);
 
 .rating_comp {
-  display: grid;
-  grid-template-areas: "overflow";
-}
-
-.rating_back {
-  height: 100%;
-  grid-area: overflow;
-  background-color: rgb(255, 196, 0);
 }
 
 .rating_stars {
   position: relative;
-  grid-area: overflow;
   /* margin: 4px; */
   display: flex;
   width: max-content;
@@ -27,11 +18,11 @@
   margin: 0rem;
   font-size: 1.2rem;
   z-index: 10;
-  background-color: rebeccapurple;
+  color: gray;
 }
 
-.rating_star i {
-  color: white;
-  background-color: white;
-  margin: 1px;
+.rating_star:nth-child(even) {
+  transform: scaleX(-1);
+  margin-left: -1.195em;
+  margin-right: 0.2em;
 }
