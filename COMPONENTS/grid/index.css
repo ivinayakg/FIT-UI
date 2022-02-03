@@ -1,0 +1,10 @@
+@import url(/CSS/global.css);
+
+.grid_comp {
+  display: grid;
+  /* flex- */
+}
+
+.grid_item {
+  min-width: 0px;
+}
