@@ -1,0 +1,28 @@
+@import url(/CSS/global.css);
+
+.rating_comp {
+}
+
+.rating_stars {
+  position: relative;
+  /* margin: 4px; */
+  display: flex;
+  width: max-content;
+  height: max-content;
+}
+
+.rating_star {
+  width: max-content;
+  height: max-content;
+  padding: 0px;
+  margin: 0rem;
+  font-size: 1.2rem;
+  z-index: 10;
+  color: gray;
+}
+
+.rating_star:nth-child(even) {
+  transform: scaleX(-1);
+  margin-left: -1.195em;
+  margin-right: 0.2em;
+}
