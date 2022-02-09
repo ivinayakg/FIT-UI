@@ -1,23 +1,123 @@
 @import url(/CSS/global.css);
 
-.navigation_comp {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: rgba(var(--primary), 0.9);
-  color: white;
+:root {
+  --header-height: 4rem;
+  --gray-light: 168, 168, 168;
 }
 
-.navigation_item {
-  padding: 0.75rem 1.2rem;
-  font-size: 1.2rem;
+.header {
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem;
+  background-color: white;
+  border-bottom: 1.5px solid rgba(var(--gray-light), 0.8);
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+
+.header_links {
+  position: absolute;
+  display: flex;
+  top: var(--header-height);
+  right: -100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: ease 500ms;
+  flex-direction: column;
+  background-color: rgb(184, 184, 184);
+  padding: 1.2rem 1.8rem;
+  gap: 16px;
+  color: black;
+}
+
+.header_links--active {
+  right: 25px;
+}
+
+.header_link {
+  transition: ease 200ms;
+}
+
+.header_link:hover {
+  cursor: pointer;
+  transform: translateY(-1.5px);
+}
+
+.header_link button {
+  color: black;
+}
+
+.header_toggle {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  transition: ease 400ms;
-  cursor: default;
+  background-color: transparent;
+  width: 22.5px;
+  height: 18px;
+  padding: 1px 0px;
 }
 
-.navigation_item:hover {
-  transform: scale(1.08);
-  background-color: rgba(230, 214, 214, 0.1);
+.header_burger {
+  height: 2px;
+  width: 100%;
+  background-color: rgba(var(--black), 0.85);
+  border-radius: 10px;
+  transition: ease 500ms;
+}
+
+.header_toggle--active {
+  position: relative;
+  display: flex;
+}
+
+.header_toggle--active .header_burger:nth-child(odd) {
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.header_toggle--active .header_burger:nth-child(1) {
+  top: 50%;
+  bottom: 50%;
+  transform: rotate(45deg);
+}
+.header_toggle--active .header_burger:nth-child(3) {
+  top: 50%;
+  bottom: 50%;
+  transform: rotate(135deg);
+}
+.header_toggle--active .header_burger:nth-child(even) {
+  display: none;
+}
+.header_mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header_links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header_link {
+    width: max-content;
+    display: flex;
+    width: 65%;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 0.5rem 0rem; */
+  }
+
+  .header_links .header_link > * {
+    margin: 0rem;
+    margin-top: 0.85rem;
+  }
+
+  .header_mobile {
+    display: block;
+  }
 }
