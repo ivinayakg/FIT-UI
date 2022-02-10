@@ -1,0 +1,96 @@
+@import url(/CSS/main.css);
+
+:root {
+  --primary: #069c54;
+  --primary-fade: #069c53b0;
+  --primary-alt: #048654;
+  --title-color: #393939;
+  --text-color: #707070;
+  --body-color: #fbfefd;
+  --text-color-light: #a6a6a6;
+  --shadow: 0, 0, 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.dark-theme {
+  --title-color: #f1f3f2;
+  --text-color: #c7d1cc;
+  --body-color: #1d2521;
+  --shadow: 244, 244, 244;
+}
+
+body {
+  color: var(--text-color);
+  line-height: 1.6;
+  background-color: var(--body-color);
+  text-align: justify;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--title-color);
+}
+
+.primary-text {
+  color: var(--primary);
+}
+
+/* header component */
+
+.header {
+  background-color: var(--body-color);
+}
+.header_themeToggle {
+  font-size: 1.4rem;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.header .header_toggle span {
+  background-color: var(--title-color);
+}
+
+.header .header_links {
+  height: 100vh;
+  background-color: var(--body-color);
+  box-shadow: 0px 4px 3px rgba(var(--shadow), 0.45);
+  padding: 1rem 4rem;
+  justify-content: start;
+  gap: 1rem;
+  z-index: 100;
+}
+
+.header .header_links a {
+  color: var(--primary-alt);
+}
+
+.header .header_links .link_active {
+  text-decoration: underline;
+}
+
+.header .header_links--active {
+  right: 0px;
+}
+
+/* hero section */
+.hero {
+}
+
+.hero .container > * {
+  width: 45%;
+}

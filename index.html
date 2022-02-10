@@ -5,18 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FIT UI</title>
-    <link rel="stylesheet" href="./CSS/homepage.css" />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
+    <script src="/JS/main.mjs" type="module" async></script>
+    <link rel="stylesheet" href="/frontend.css" />
   </head>
-  <body style="margin: 2rem">
-    <div class="input">
-      <input type="email" />
-      <i class="fas fa-exclamation-triangle"></i>
+  <body>
+    <header class="header">
+      <div class="header_brand">
+        <h1 class="t2 primary-text">FIT UI</h1>
+      </div>
+
+      <div class="header_themeToggle"></div>
+
+      <button class="header_toggle">
+        <span class="header_burger"></span>
+        <span class="header_burger"></span>
+        <span class="header_burger"></span>
+      </button>
+
+      <div class="header_links">
+        <div class="header_link">
+          <a class="t3 link_active" href="/">Home </a>>
+        </div>
+        <div class="header_link">
+          <a class="t3" href="/docs/Docs.html">Docs </a>>
+        </div>
+      </div>
+    </header>
+
+    <div class="section hero">
+      <div class="container">
+        <div class="mr5">
+          <h2 class="head1 hero_heading primary-text">Welcome To FIT UI</h2>
+          <p class="text3">
+            Which cuts all the fatty uneccessary CSS And JS, and leave you with
+            pure and simple styling components and utility superpowers to scale
+            them further
+          </p>
+        </div>
+        <img src="/assets/hero main.svg" class="image--comp" alt="" />
+      </div>
     </div>
   </body>
 </html>

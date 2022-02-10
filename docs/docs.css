@@ -1,0 +1,66 @@
+html {
+  overflow-y: hidden;
+}
+
+.docs {
+}
+
+.docs .container {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.docs_nav {
+  width: 17.5%;
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  height: 100vh;
+  gap: 1.5rem;
+  overflow-y: scroll;
+  padding-bottom: 2rem;
+}
+.docs_nav::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+.docs_nav::-webkit-scrollbar-track {
+  display: none;
+}
+
+/* Handle */
+.docs_nav::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+.docs_nav::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-alt);
+}
+
+.docs_link {
+  background-color: transparent;
+  width: max-content;
+  border-radius: 4px;
+  color: var(--title-color);
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.docs_link:hover {
+  padding-left: 5rem;
+  background-color: var(--primary-fade);
+  width: max-content;
+  color: white;
+}
+
+.doc_current {
+  flex-grow: 2;
+}
+
+.doc_current iframe {
+  width: 100%;
+  height: 120vh;
+}
