@@ -1,0 +1,191 @@
+<link rel="stylesheet" href="/frontend.css" />
+<link rel="stylesheet" href="/docs/pages/info.css" />
+
+<script src="/docs/pages/docs.js" async></script>
+<script src="/JS/main.mjs" type="module" async></script>
+
+<div class="docs_container p2">
+  <div class="docs_content pr2">
+    <h1 class="head1 mb3">Alert</h1>
+    <h2 class="head2 mb1">Introduction</h2>
+    <p class="text3 mb5">
+      Alert makes easier for user to be aware of the results of their respective
+      actions.It pop ups out of nowhere therefore it work even better for
+      awareness
+    </p>
+    <!-- 1st example -->
+    <h2 class="head2 mb1">Basic Alert</h2>
+    <p class="text3 mb2">
+      Very simple alert componens which comes with Javascript. By default they
+      will take a maximum of 45% width of the page, which makes them perfect for
+      responsivenes, also the text which overlaps is by default hidded for UX.
+    </p>
+    <div class="example-box mb2">
+      <div class="alert alert--success">
+        <div class="alert_icon"></div>
+        <div class="alert_message">
+          Hey this is our success alert, how you doin'? Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Voluptatum assumenda sed nesciunt
+          quidem et excepturi libero consectetur quas esse itaque. Libero
+          praesentium dolor quae qui similique aliquid, minus voluptatem!
+          Suscipit?
+        </div>
+        <button class="alert_button">X</button>
+      </div>
+      <div class="alert alert--danger">
+        <div class="alert_icon"></div>
+        <div class="alert_message">
+          Hey this is our success alert, how you doin'? Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Voluptatum assumenda sed nesciunt
+          quidem et excepturi libero consectetur quas esse itaque. Libero
+          praesentium dolor quae qui similique aliquid, minus voluptatem!
+          Suscipit?
+        </div>
+        <button class="alert_button">X</button>
+      </div>
+      <div class="alert alert--warning">
+        <div class="alert_icon"></div>
+        <div class="alert_message">
+          Hey this is our success alert, how you doin'? Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Voluptatum assumenda sed nesciunt
+          quidem et excepturi libero consectetur quas esse itaque. Libero
+          praesentium dolor quae qui similique aliquid, minus voluptatem!
+          Suscipit?
+        </div>
+        <button class="alert_button">X</button>
+      </div>
+      <div class="alert alert--info">
+        <div class="alert_icon"></div>
+        <div class="alert_message">
+          Hey this is our success alert, how you doin'? Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Voluptatum assumenda sed nesciunt
+          quidem et excepturi libero consectetur quas esse itaque. Libero
+          praesentium dolor quae qui similique aliquid, minus voluptatem!
+          Suscipit?
+        </div>
+        <button class="alert_button">X</button>
+      </div>
+    </div>
+    <iframe
+      src="https://carbon.now.sh/embed/rIloJVF5NNxIRUiM79f4"
+      style="
+        width: 825px;
+        height: 372px;
+        border: 0;
+        transform: scale(1);
+        overflow: hidden;
+      "
+      class="mb5"
+      sandbox="allow-scripts allow-same-origin"
+    >
+    </iframe>
+    <!-- 2st example -->
+    <h2 class="head2 mb1">Without Icon</h2>
+    <p class="text3 mb2">
+      To remove icon from the alert you just simple have to remove the icon
+      container and that's it. A much more minimalistic alert is here for you.
+    </p>
+    <div class="example-box mb2">
+      <div class="alert alert--success">
+        <div class="alert_message">
+          Hey this is our success alert, how you doin'? Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Voluptatum assumenda sed nesciunt
+          quidem et excepturi libero consectetur quas esse itaque. Libero
+          praesentium dolor quae qui similique aliquid, minus voluptatem!
+          Suscipit?
+        </div>
+        <button class="alert_button">X</button>
+      </div>
+      <div class="alert alert--danger">
+        <div class="alert_message">
+          Hey this is our success alert, how you doin'? Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Voluptatum assumenda sed nesciunt
+          quidem et excepturi libero consectetur quas esse itaque. Libero
+          praesentium dolor quae qui similique aliquid, minus voluptatem!
+          Suscipit?
+        </div>
+        <button class="alert_button">X</button>
+      </div>
+      <div class="alert alert--warning">
+        <div class="alert_message">
+          Hey this is our success alert, how you doin'? Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Voluptatum assumenda sed nesciunt
+          quidem et excepturi libero consectetur quas esse itaque. Libero
+          praesentium dolor quae qui similique aliquid, minus voluptatem!
+          Suscipit?
+        </div>
+        <button class="alert_button">X</button>
+      </div>
+      <div class="alert alert--info">
+        <div class="alert_message">
+          Hey this is our success alert, how you doin'? Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Voluptatum assumenda sed nesciunt
+          quidem et excepturi libero consectetur quas esse itaque. Libero
+          praesentium dolor quae qui similique aliquid, minus voluptatem!
+          Suscipit?
+        </div>
+        <button class="alert_button">X</button>
+      </div>
+    </div>
+    <iframe
+      src="https://carbon.now.sh/embed/o5Ixs3TXrxNT2Hb2et2t"
+      style="
+        width: 825px;
+        height: 372px;
+        border: 0;
+        transform: scale(1);
+        overflow: hidden;
+      "
+      class="mb5"
+      sandbox="allow-scripts allow-same-origin"
+    >
+    </iframe>
+    <!-- 3rd example -->
+    <h2 class="head2 mb1">With Link</h2>
+    <p class="text3 mb2">
+      This just shows the flexibility of the component just like any other
+      component you can add any component in this case an anchor tag to the
+      alert component.
+    </p>
+    <div class="example-box mb2">
+      <div class="alert alert--success">
+        <div class="alert_message">
+          alert with link <a class="text-underline">Click Here</a>
+        </div>
+        <button class="alert_button">X</button>
+      </div>
+      <div class="alert alert--danger">
+        <div class="alert_message">
+          alert with link <a class="text-underline">Click Here</a>
+        </div>
+        <button class="alert_button">X</button>
+      </div>
+      <div class="alert alert--warning">
+        <div class="alert_message">
+          alert with link <a class="text-underline">Click Here</a>
+        </div>
+        <button class="alert_button">X</button>
+      </div>
+      <div class="alert alert--info">
+        <div class="alert_message">
+          alert with link <a class="text-underline">Click Here</a>
+        </div>
+        <button class="alert_button">X</button>
+      </div>
+    </div>
+    <iframe
+      src="https://carbon.now.sh/embed/cMYgvVsQmO6w5Krh82ol"
+      style="
+        width: 100%;
+        height: 316px;
+        border: 0;
+        transform: scale(1);
+        overflow: hidden;
+      "
+      class="mb5"
+      sandbox="allow-scripts allow-same-origin"
+    >
+    </iframe>
+  </div>
+  <div class="docs_titles"></div>
+</div>
