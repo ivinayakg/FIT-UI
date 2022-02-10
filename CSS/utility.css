@@ -26,6 +26,10 @@
   max-height: 100vh;
 }
 
+.text-underline {
+  text-decoration: underline;
+}
+
 /* margin and padding starts here */
 
 /* margin here */
