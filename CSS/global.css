@@ -226,7 +226,16 @@ input:invalid {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1150px;
-  margin: unset auto;
+  max-width: 1300px;
   height: max-content;
+  padding: 0.5rem;
+}
+
+.section {
+  width: 100vw;
+  padding: 1.2rem;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

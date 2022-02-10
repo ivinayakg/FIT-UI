@@ -220,6 +220,7 @@ export const badgeHandler = () => {
   const badge = document.querySelectorAll(".badge");
 
   badge.forEach((target, i) => {
+    if (!target) return;
     target.style.position = "relative";
     let badge = document.createElement("span");
     badge.innerText = target.attributes.content.nodeValue;
@@ -229,9 +230,9 @@ export const badgeHandler = () => {
       badge.classList.add(target.attributes.iconValue.nodeValue);
     }
     badge.classList.add("badge_icon");
-    badge.classList.add(target.attributes.radius.nodeValue);
-    badge.classList.add(target.attributes.position.nodeValue);
-    badge.classList.add(target.attributes.color.nodeValue);
+    badge.classList.add(target.attributes.radius?.nodeValue);
+    badge.classList.add(target.attributes.position?.nodeValue);
+    badge.classList.add(target.attributes.color?.nodeValue);
 
     target.append(badge);
   });

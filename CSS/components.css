@@ -303,6 +303,9 @@
   height: 18px;
   padding: 1px 0px;
 }
+.header_toggle:hover {
+  outline: none;
+}
 
 .header_burger {
   height: 2px;
@@ -526,7 +529,6 @@
 /* image starts from here */
 .image--comp {
   object-fit: contain;
-  width: 100%;
   position: relative;
 }
 

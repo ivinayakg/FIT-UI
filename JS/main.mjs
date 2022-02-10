@@ -10,7 +10,7 @@ import {
   ratingHandler,
   sliderHandler,
   snackbarHandler,
-} from "./component";
+} from "/JS/component.js";
 
 alertHandler();
 avatarHandler();
@@ -23,3 +23,21 @@ navigationHandler();
 ratingHandler();
 sliderHandler();
 snackbarHandler();
+
+const themeHanlder = () => {
+  let toggle = document.querySelector(".header_themeToggle");
+  toggle.innerHTML = '<i class="fas fa-sun"></i>';
+  let body = document.querySelector("body");
+
+  toggle.addEventListener("click", () => {
+    if (body.className.includes("dark-theme")) {
+      body.classList.remove("dark-theme");
+      toggle.innerHTML = '<i class="fas fa-sun"></i>';
+    } else {
+      body.classList.add("dark-theme");
+      toggle.innerHTML = '<i class="fas fa-moon"></i>';
+    }
+  });
+};
+
+themeHanlder();
