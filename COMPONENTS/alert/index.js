@@ -1,5 +1,4 @@
 const alert = document.querySelectorAll(".alert");
-const closeButtons = document.querySelectorAll(".alert_button");
 const alertIcons = [
   "fa-check",
   "fa-exclamation-circle",
@@ -8,6 +7,7 @@ const alertIcons = [
 ];
 
 alert.forEach((element, i) => {
+  let closeButton = element.querySelector(".alert_button");
   //this is for injecting the icon into the dom from javascript
   let className = element.className;
   let icon = document.createElement("i");
@@ -23,7 +23,7 @@ alert.forEach((element, i) => {
   }
   element.children[0].append(icon);
 
-  closeButtons[i].addEventListener("click", (e) => {
+  closeButton.addEventListener("click", (e) => {
     element.remove();
   });
 });

@@ -2,7 +2,6 @@ const listComps = document.querySelectorAll(".list_comp");
 const dropdownLists = document.querySelectorAll(".list_comp--dropdown");
 
 listComps.forEach((target, i) => {
-  //   console.log(target.attributes);
   if (
     !target.attributes["backColor"] ||
     target.attributes["backColor"].nodeValue === ""

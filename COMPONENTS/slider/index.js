@@ -23,7 +23,7 @@ sliders.forEach((target, i) => {
   });
 
   if (slideDotsEvent) {
-    let slideDotButton = document.querySelectorAll(".slide_dot");
+    let slideDotButton = target.querySelectorAll(".slide_dot");
     slideDotButton.forEach((btn, i) => {
       if (i !== current) {
         btn.innerHTML = '<i class="far fa-circle"></i>';
