@@ -4,8 +4,19 @@
   align-items: center;
 }
 
-.flex-col {
+div .flex-col {
   flex-direction: column;
+}
+div .flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-basis100 > * {
+  flex-basis: 100px;
 }
 
 .gap {
@@ -28,6 +39,14 @@
 
 .text-underline {
   text-decoration: underline;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.relative {
+  position: relative;
 }
 
 /* margin and padding starts here */

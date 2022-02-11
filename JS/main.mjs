@@ -26,7 +26,9 @@ snackbarHandler();
 
 const themeHanlder = () => {
   let toggle = document.querySelector(".header_themeToggle");
-  toggle.innerHTML = '<i class="fas fa-sun"></i>';
+  if (toggle.innerHTML === "") {
+    toggle.innerHTML = '<i class="fas fa-sun"></i>';
+  }
   let body = document.querySelector("body");
 
   toggle.addEventListener("click", () => {
