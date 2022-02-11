@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="/frontend.css" />
+<link rel="stylesheet" href="/docs/pages/info.css" />
+
+<script>
+  // This javascript is here for a very basic problem that i was facing due to my implementation of the iframe
+  // wont explain it here but you can message me would be happy to do so
+  // if not then its ok as this code below is not very important
+  let head = document.querySelector("head");
+  window.onload = () => {
+    let script1 = document.createElement("script");
+    script1.src = "/JS/main.mjs";
+    script1.type = "module";
+    script1.async = "true";
+    let script2 = document.createElement("script");
+    script2.src = "/docs/pages/docs.js";
+    script2.async = "true";
+    head.append(script1);
+    head.append(script2);
+  };
+</script>
+
+<div class="docs_container p2">
+  <div class="docs_content pr2">
+    <h1 class="head1 mb3">Snackbar</h1>
+    <h2 class="head2 mb1">Introduction</h2>
+    <p class="text3 mb5">
+      Just Like alert there working is very similar but the only difference is
+      they appear at the bottom of the page
+    </p>
+    <!-- 1st example -->
+    <h2 class="head2 mb1">Basic Use</h2>
+    <p class="text3 mb2">
+      Just add the code below and done.Also there implementation is very similar
+      to that of modal.You add a button with a unique id and then pass this
+      unique id to the snackbar component.
+    </p>
+    <div
+      class="example-box mb2"
+      style="height: 500px; width: 100%; position: relative"
+    >
+      <button class="btn-pri snackbar_toggle" SnackbarId="snackbar1">
+        Open Snackbar
+      </button>
+      <button class="btn-pri snackbar_toggle" SnackbarId="snackbar2">
+        Open Snackbar
+      </button>
+
+      <div class="snackbar snackbar--baseline" id="snackbar1">
+        <p class="snackbar_para">
+          Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum
+          dolor sit amet.Lorem ipsum dolor sit amet.
+        </p>
+        <button class="snackbar_close">
+          <i class="far fa-times-circle"></i>
+        </button>
+      </div>
+      <div class="snackbar snackbar--leading" id="snackbar2">
+        <p class="snackbar_para">
+          Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum
+          dolor sit amet.Lorem ipsum dolor sit amet.
+        </p>
+        <button class="snackbar_close">
+          <i class="far fa-times-circle"></i>
+        </button>
+      </div>
+    </div>
+    <iframe
+      src="https://carbon.now.sh/embed/kU1BswnVznsJEuEq83LG"
+      style="
+        width: 680px;
+        height: 744px;
+        border: 0;
+        transform: scale(1);
+        overflow: hidden;
+      "
+      class="mb5"
+      sandbox="allow-scripts allow-same-origin"
+    >
+    </iframe>
+  </div>
+  <div class="docs_titles"></div>
+</div>

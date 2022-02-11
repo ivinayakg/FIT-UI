@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="/frontend.css" />
+<link rel="stylesheet" href="/docs/pages/info.css" />
+
+<script src="/docs/pages/docs.js" async></script>
+<script src="/JS/main.mjs" type="module" async></script>
+
+<div class="docs_container p2">
+  <div class="docs_content pr2">
+    <h1 class="head1 mb3">Image</h1>
+    <h2 class="head2 mb1">Introduction</h2>
+    <p class="text3 mb5">
+      Images are a very fundamental part of showing graphics to the user for
+      interaction or make the content more engaging but styling making them
+      responsive is very hard.
+    </p>
+    <!-- 1st example -->
+    <h2 class="head2 mb1">Basic Image</h2>
+    <p class="text3 mb2">
+      The images can be styled in a number of ways, cover or contain.by default
+      it will have object-fit:contain. You can add 'image--cover' for
+      object-fit:cover or 'image--file' for object-fit:fill;
+    </p>
+    <div class="example-box mb2">
+      <img src="/docs/assets/example.jpg" alt="" class="image--comp" />
+    </div>
+    <iframe
+      src="https://carbon.now.sh/embed/65M7Z8xdcilkNtx0ed6B"
+      style="
+        width: 707px;
+        height: 223px;
+        border: 0;
+        transform: scale(1);
+        overflow: hidden;
+      "
+      class="mb5"
+      sandbox="allow-scripts allow-same-origin"
+    >
+    </iframe>
+    <!-- 2st example -->
+    <h2 class="head2 mb1">Rounded Images</h2>
+    <p class="text3 mb2">
+      Using simple 'br-*' class you can add border-radius to the image
+    </p>
+    <div class="example-box mb2 flex-wrap flex-row flex-basis100">
+      <img src="/docs/assets/example.jpg" alt="" class="image--comp br-small" />
+      <img src="/docs/assets/example.jpg" alt="" class="image--comp br-mid" />
+      <img src="/docs/assets/example.jpg" alt="" class="image--comp br-large" />
+      <img src="/docs/assets/example.jpg" alt="" class="image--comp br-full" />
+    </div>
+    <iframe
+      src="https://carbon.now.sh/embed/3nwJ9DMv587eCyIO5m2M"
+      style="
+        width: 774px;
+        height: 260px;
+        border: 0;
+        transform: scale(1);
+        overflow: hidden;
+      "
+      class="mb5"
+      sandbox="allow-scripts allow-same-origin"
+    >
+    </iframe>
+  </div>
+  <div class="docs_titles"></div>
+</div>

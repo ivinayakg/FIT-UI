@@ -1,0 +1,123 @@
+<link rel="stylesheet" href="/frontend.css" />
+<link rel="stylesheet" href="/docs/pages/info.css" />
+
+<script src="/docs/pages/docs.js" async></script>
+<script src="/JS/main.mjs" type="module" async></script>
+
+<div class="docs_container p2">
+  <div class="docs_content pr2">
+    <h1 class="head1 mb3">Badge</h1>
+    <h2 class="head2 mb1">Introduction</h2>
+    <p class="text3 mb5">
+      Badge are used for communicating a very subtle amout and type of
+      information for e.g - products in carts, notifications on the user avatar
+      etc. The structure of using it is very minimum so that you can use it with
+      almost evry component out there.
+    </p>
+    <!-- 1st example -->
+    <h2 class="head2 mb1">Basic Badge</h2>
+    <p class="text3 mb2">
+      You can use it with literally any component, like text, headings, or icons
+      below.
+    </p>
+    <div class="example-box mb2">
+      <div
+        class="badge"
+        icon="false"
+        content="12"
+        position="t-left"
+        color="def"
+        radius="br-large"
+      >
+        <button class="badge_button br-large t3 btn-sec">Hello</button>
+      </div>
+      <div
+        class="badge"
+        icon="false"
+        content="12"
+        position="t-left"
+        color="sec"
+        radius="br-large"
+      >
+        <p class="text3">Badge Component</p>
+      </div>
+      <div
+        class="badge"
+        icon="false"
+        content="12"
+        position="t-left"
+        color="sec"
+        radius="br-large"
+      >
+        <div class="avatar br-full" color="rgba(255, 59, 48)">
+          <img alt="" src="https://picsum.photos/100" />
+        </div>
+      </div>
+    </div>
+    <iframe
+      src="https://carbon.now.sh/embed/3q8DwP3SXqADUxgSFLd0"
+      style="
+        width: 471px;
+        height: 391px;
+        border: 0;
+        transform: scale(1);
+        overflow: hidden;
+      "
+      class="mb5"
+      sandbox="allow-scripts allow-same-origin"
+    >
+    </iframe>
+    <!-- 2st example -->
+    <h2 class="head2 mb1">With Icon</h2>
+    <p class="text3 mb2">
+      By default FIT UI comes with fontawesome icons @5.15, which is used in the
+      badge component, simpley give 'icon-true' and 'iconValue = ' to you
+      desired fontawesome icon class and thats it. you are done.
+    </p>
+    <div class="example-box mb2">
+      <div
+        class="badge"
+        icon="true"
+        iconValue="fab fa-amazon"
+        content="12"
+        position="t-left"
+        color="sec"
+        radius="br-large"
+      >
+        <div class="avatar br-full" color="rgba(255, 59, 48)">
+          <img alt="" src="https://picsum.photos/100" />
+        </div>
+      </div>
+    </div>
+    <iframe
+      src="https://carbon.now.sh/embed/6Ezk98FRUglArNy3YRnx"
+      style="
+        width: 622px;
+        height: 447px;
+        border: 0;
+        transform: scale(1);
+        overflow: hidden;
+      "
+      class="mb5"
+      sandbox="allow-scripts allow-same-origin"
+    >
+    </iframe>
+
+    <!-- tutorial -->
+    <h2 class="head2 mb1">How To...</h2>
+    <p class="text3 mb2">
+      there are bunch other values like radius , color and position which are
+      there to modified.
+      <br />
+      Color can take three value 'pri', 'sec', 'def' for primary color ,
+      secondary color, and black.
+      <br />
+      Radius can take values like 'br-small', 'br-mid', 'br-large', 'br-full'
+      for border radius of the badge.
+      <br />
+      Position can take values like 't-left', 't-right', 'b-left', 'b-right' for
+      top-left , top-right, bottom-left and bottom-right.
+    </p>
+  </div>
+  <div class="docs_titles"></div>
+</div>

@@ -35,7 +35,7 @@ html {
 
 /* Handle */
 .docs_nav::-webkit-scrollbar-thumb {
-  background: var(--primary);
+  background: rgb(var(--primary));
   border-radius: 4px;
 }
 
@@ -51,6 +51,7 @@ html {
   color: var(--title-color);
   text-align: left;
   font-size: 1.5rem;
+  transition: ease 500ms;
 }
 
 .docs_link:hover {
