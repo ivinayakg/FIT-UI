@@ -278,10 +278,12 @@
 
 .header_links--active {
   right: 25px;
+  max-width: 50vw;
 }
 
 .header_link {
   transition: ease 200ms;
+  overflow: visible;
 }
 
 .header_link:hover {
@@ -441,6 +443,10 @@
   text-align: left;
   height: max-content;
   transition: all ease 250ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .list_comp--row {
@@ -496,6 +502,7 @@
 
 /* input starts here */
 .input--comp {
+  background-color: transparent;
   position: relative;
   width: max-content;
   padding: 6px 9px;
@@ -516,8 +523,8 @@
 }
 
 .input--valid {
-  border-color: rgba(var(--primary), 0.9);
-  background-color: rgba(var(--primary), 0.2);
+  border-color: rgba(3, 247, 97, 0.9);
+  background-color: rgba(3, 247, 97, 0.2) !important;
 }
 
 .input--comp:focus {
@@ -562,11 +569,20 @@
   border-radius: 0.25rem;
   background-color: white;
   flex-direction: column;
-  width: 20rem;
+  width: 350px;
   display: flex;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.card .card--dismiss {
+  position: absolute;
+  font-size: 2rem;
+  color: gray;
+  top: 1rem;
+  right: 1rem;
 }
 
 button {
@@ -747,10 +763,10 @@ button {
 button {
   cursor: pointer;
   border: none;
-  color: white;
   padding: 0.3em 0.55em;
   font-size: 1.2rem;
-  transition: ease 500ms;
+  background-color: black;
+  color: white;
 }
 
 .btn--pri {
@@ -771,6 +787,7 @@ button {
 
 button:disabled {
   opacity: 0.4;
+  cursor: not-allowed;
 }
 
 .btn--pri.btn--empty {
@@ -807,6 +824,8 @@ button:disabled {
 .badge {
   margin: 1rem;
   width: max-content;
+  position: relative;
+  overflow: visible;
 }
 
 .badge_icon {
@@ -816,6 +835,7 @@ button:disabled {
 }
 i.badge_icon {
   padding: 7px 11px;
+  z-index: 10;
 }
 
 .badge_icon.pri {
@@ -831,23 +851,23 @@ i.badge_icon {
 }
 
 .t-left {
-  top: -2em;
-  left: -2em;
+  top: -1.5em;
+  left: -1.5em;
 }
 
 .t-right {
-  top: -2em;
-  right: -2em;
+  top: -1.5em;
+  right: -1.5em;
 }
 
 .b-left {
-  bottom: -2em;
-  left: -2em;
+  bottom: -1.5em;
+  left: -1.5em;
 }
 
 .b-right {
-  bottom: -2em;
-  right: -2em;
+  bottom: -1.5em;
+  right: -1.5em;
 }
 
 /* badge starts from here  */

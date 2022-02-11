@@ -36,36 +36,6 @@ a {
   text-decoration: none;
 }
 
-/* button starts here */
-/* button css styles are changed in the button component css file --------------------------------------------------- */
-button {
-  cursor: pointer;
-  border: none;
-  color: white;
-  padding: 0.3em 0.55em;
-  font-size: 1.2rem;
-  transition: ease 500ms;
-}
-
-.btn-pri {
-  background-color: rgba(var(--primary), 1);
-}
-.btn-pri:hover {
-  background-color: rgba(var(--primary), 0.8);
-}
-
-.btn-sec {
-  background-color: rgba(var(--secondary), 1);
-}
-.btn-sec:hover {
-  background-color: rgba(var(--secondary), 0.8);
-}
-
-button:disabled {
-  opacity: 0.4;
-}
-/* button ends here */
-
 hr {
   border: 0;
   border-top: 1px solid #efefef;

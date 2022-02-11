@@ -30,6 +30,13 @@ export const sliderHandler = () => {
     let slideDots = target.querySelector(".slider_dots");
     let sliderItems = target.querySelectorAll(".slider_item");
     let slideWidth = slide.offsetWidth / sliderItems.length;
+    let slideShow = target.attributes["slideShow"]?.nodeValue;
+
+    if (slideShow) {
+      setInterval(() => {
+        slideButtons.children[1].click();
+      }, parseInt(slideShow));
+    }
 
     let slideDotsEvent = target.className.includes("slider--dots");
 
@@ -69,15 +76,14 @@ export const sliderHandler = () => {
       });
     } else if (!slideDotsEvent) {
       slideButtons.children[1].addEventListener("click", () => {
-        current =
-          current !== sliderItems.length - 1
-            ? current + 1
-            : sliderItems.length - 1;
+        current = current !== sliderItems.length - 1 ? current + 1 : 0;
+
         slide.style.transform = `translate3d(-${translatePercentage[current]}px,0,0)`;
       });
       slideButtons.children[0].addEventListener("click", () => {
         current = current !== 0 ? current - 1 : 0;
         slide.style.transform = `translate3d(-${translatePercentage[current]}px,0,0)`;
+        console.log(current);
       });
     }
   });
@@ -190,7 +196,7 @@ export const listHandler = () => {
   });
 };
 export const inputHandler = () => {
-  const inputs = document.querySelectorAll(".input");
+  const inputs = document.querySelectorAll(".input--comp");
 
   inputs.forEach((target, i) => {
     target.addEventListener("change", () => {
@@ -225,9 +231,10 @@ export const badgeHandler = () => {
     let badge = document.createElement("span");
     badge.innerText = target.attributes.content.nodeValue;
     if (target.attributes.icon.nodeValue === "true") {
+      let iconValue = target.attributes.iconValue.nodeValue.split(" ");
       badge = document.createElement("i");
-      badge.classList.add("far");
-      badge.classList.add(target.attributes.iconValue.nodeValue);
+      badge.classList.add(iconValue[0]);
+      badge.classList.add(iconValue[1]);
     }
     badge.classList.add("badge_icon");
     badge.classList.add(target.attributes.radius?.nodeValue);
