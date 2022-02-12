@@ -1,4 +1,4 @@
-export const snackbarHandler = () => {
+const snackbarHandler = () => {
   const snackbartoggles = document.querySelectorAll(".snackbar_toggle");
 
   snackbartoggles.forEach((target, i) => {
@@ -21,7 +21,7 @@ export const snackbarHandler = () => {
     });
   });
 };
-export const sliderHandler = () => {
+const sliderHandler = () => {
   const sliders = document.querySelectorAll(".slider");
 
   sliders.forEach((target, i) => {
@@ -88,7 +88,7 @@ export const sliderHandler = () => {
     }
   });
 };
-export const ratingHandler = () => {
+const ratingHandler = () => {
   const rating = document.querySelectorAll(".rating_comp");
 
   const starsColors = (stars, end) => {
@@ -107,7 +107,7 @@ export const ratingHandler = () => {
     });
   });
 };
-export const navigationHandler = () => {
+const navigationHandler = () => {
   const headers = document.querySelectorAll(".header");
 
   headers.forEach((target, i) => {
@@ -125,7 +125,7 @@ export const navigationHandler = () => {
     });
   });
 };
-export const modalHandler = () => {
+const modalHandler = () => {
   const toggleBtn = document.querySelectorAll(".modal_toggle");
 
   toggleBtn.forEach((target, i) => {
@@ -150,7 +150,7 @@ export const modalHandler = () => {
     });
   });
 };
-export const listHandler = () => {
+const listHandler = () => {
   const listComps = document.querySelectorAll(".list_comp");
   const dropdownLists = document.querySelectorAll(".list_comp--dropdown");
 
@@ -195,7 +195,7 @@ export const listHandler = () => {
     });
   });
 };
-export const inputHandler = () => {
+const inputHandler = () => {
   const inputs = document.querySelectorAll(".input--comp");
 
   inputs.forEach((target, i) => {
@@ -210,7 +210,7 @@ export const inputHandler = () => {
     });
   });
 };
-export const gridHandler = () => {
+const gridHandler = () => {
   const gridComps = document.querySelectorAll(".grid_comp");
 
   gridComps.forEach((target, i) => {
@@ -222,7 +222,7 @@ export const gridHandler = () => {
     }
   });
 };
-export const badgeHandler = () => {
+const badgeHandler = () => {
   const badge = document.querySelectorAll(".badge");
 
   badge.forEach((target, i) => {
@@ -244,14 +244,14 @@ export const badgeHandler = () => {
     target.append(badge);
   });
 };
-export const avatarHandler = () => {
+const avatarHandler = () => {
   const avatars = document.querySelectorAll(".avatar");
 
   avatars.forEach((target, i) => {
     target.style.backgroundColor = target.attributes.color.nodeValue;
   });
 };
-export const alertHandler = () => {
+const alertHandler = () => {
   const alert = document.querySelectorAll(".alert");
   const alertIcons = [
     "fa-check",
