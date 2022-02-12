@@ -274,11 +274,11 @@
   padding: 1.2rem 1.8rem;
   gap: 16px;
   color: black;
+  max-width: 50vw;
 }
 
 .header_links--active {
   right: 25px;
-  max-width: 50vw;
 }
 
 .header_link {
@@ -501,7 +501,7 @@
 /* list ends here */
 
 /* input starts here */
-.input--comp {
+.input {
   background-color: transparent;
   position: relative;
   width: max-content;
