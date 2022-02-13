@@ -139,25 +139,6 @@ img {
 
 /* typography ends here */
 
-/* border radius starts*/
-
-.br-small {
-  border-radius: 5px;
-}
-
-.br-mid {
-  border-radius: 10px;
-}
-
-.br-large {
-  border-radius: 15px;
-}
-
-.br-full {
-  border-radius: 999px;
-}
-/* border radius ends here*/
-
 /* forms input fields  */
 
 /* update the below input from components input folder ----------------------------------------------------------*/
