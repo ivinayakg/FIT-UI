@@ -1,4 +1,4 @@
-const inputs = document.querySelectorAll(".input");
+const inputs = document.querySelectorAll(".input--comp");
 
 inputs.forEach((target, i) => {
   target.addEventListener("change", () => {
