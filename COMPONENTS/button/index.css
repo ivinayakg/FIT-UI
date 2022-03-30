@@ -54,3 +54,19 @@ button:disabled {
 .btn--sec.btn--outline:hover {
   background-color: rgba(var(--secondary), 0.15);
 }
+
+.btn--float {
+  border-radius: 60%;
+  background-color: rgba(var(--primary), 1);
+  padding: 0.8rem 1.1rem;
+}
+
+.btn--icon {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.btn--link {
+  background-color: transparent;
+  text-decoration: underline;
+}
