@@ -3,8 +3,13 @@
 .grid_comp {
   display: grid;
   /* flex- */
+  gap: 1rem;
 }
 
 .grid_item {
   min-width: 0px;
+}
+
+.grid-2 {
+  grid-template-columns: 1fr 1fr;
 }
