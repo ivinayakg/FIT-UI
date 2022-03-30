@@ -13,10 +13,20 @@
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.card .card--dismiss {
+  position: absolute;
+  font-size: 2rem;
+  color: #6200ee;
+  top: 1rem;
+  right: 1rem;
 }
 
 button {
   transition: none;
+  border: none;
 }
 
 .card_imggradient {
