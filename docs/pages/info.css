@@ -1,0 +1,77 @@
+* {
+  overflow: hidden;
+}
+
+.docs_container {
+  overflow-y: scroll;
+  max-height: 100vh;
+  padding-bottom: 12rem;
+  display: grid;
+  grid-template-columns: 4.5fr 1fr;
+  min-height: 100vh;
+  transition: ease 500ms;
+  position: relative;
+}
+.docs_container::-webkit-scrollbar {
+  width: 0px;
+}
+
+.docs_content {
+  height: max-content;
+}
+
+.docs_content iframe {
+  overflow-y: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100% !important;
+}
+
+.docs_titles {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  right: 1.2rem;
+}
+
+.doc_titleLink {
+  cursor: pointer;
+  background-color: rgba(var(--primary), 0.75);
+  color: white;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.doc_titleLink:hover {
+  background-color: rgba(var(--primary), 0.9);
+}
+
+.example-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem auto;
+  width: max-content;
+  max-width: 90%;
+  padding: 2rem;
+  outline: 1px solid black;
+  border-radius: 2px;
+}
+
+.example-box > * {
+  max-width: 100%;
+}
+
+.example-box .slider,
+.example-box .slider_item,
+.example-box .slider_dots,
+.example-box .slider_buttons {
+  max-width: 600px;
+  width: 600px;
+  max-height: 300px;
+}

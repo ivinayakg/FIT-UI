@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="/frontend.css" />
+<link rel="stylesheet" href="/docs/pages/info.css" />
+
+<script src="/docs/pages/docs.js" async></script>
+<script src="/JS/main.mjs" type="module" async></script>
+
+<div class="docs_container p2">
+  <div class="docs_content pr2">
+    <h1 class="head1 mb3">Modal</h1>
+    <h2 class="head2 mb1">Introduction</h2>
+    <p class="text3 mb5">
+      Often used as popup for notification or login and many more.
+    </p>
+    <!-- 1st example -->
+    <h2 class="head2 mb1">Modal</h2>
+    <p class="text3 mb2">
+      Using it is very simple, copy and paste or clone the html structure with
+      classes from below, then add a button which you want to use to open the
+      modal and give it a unique id.Lastly, take the unique id from the button
+      and add it to the modal and done.<br />
+      That's it now you can use the modal with your choice of button.
+    </p>
+    <div class="example-box mb2 flex-row">
+      <button class="modal_toggle btn-pri" ModalId="modal1">
+        Open the Modal
+      </button>
+
+      <div class="modal" id="modal1">
+        <div class="modal_content br-large">
+          <h2 class="modal_heading">Modal Heading</h2>
+          <div class="modal_body">
+            The content of this page is rendered using a Ifram therefore the
+            modal is working in this frame only.You can test it further
+            <a class="text-underline" href="/docs/pages/modal.html">Here</a>
+          </div>
+          <div class="modal_actions">
+            <button class="modal_actionBtn">Action 1</button>
+            <button class="modal_actionBtn">Action 2</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <iframe
+      src="https://carbon.now.sh/embed/Ta4VYF7a8EHjpjNd5CPt"
+      style="
+        width: 680px;
+        height: 465px;
+        border: 0;
+        transform: scale(1);
+        overflow: hidden;
+      "
+      class="mb5"
+      sandbox="allow-scripts allow-same-origin"
+    >
+    </iframe>
+  </div>
+  <div class="docs_titles"></div>
+</div>

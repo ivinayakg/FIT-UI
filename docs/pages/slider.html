@@ -1,0 +1,175 @@
+<link rel="stylesheet" href="/frontend.css" />
+<link rel="stylesheet" href="/docs/pages/info.css" />
+
+<script>
+  // This javascript is here for a very basic problem that i was facing due to my implementation of the iframe
+  // wont explain it here but you can message me would be happy to do so
+  // if not then its ok as this code below is not very important
+  let head = document.querySelector("head");
+  window.onload = () => {
+    let script1 = document.createElement("script");
+    script1.src = "/JS/main.mjs";
+    script1.type = "module";
+    script1.async = "true";
+    let script2 = document.createElement("script");
+    script2.src = "/docs/pages/docs.js";
+    script2.async = "true";
+    head.append(script1);
+    head.append(script2);
+  };
+</script>
+
+<div class="docs_container p2">
+  <div class="docs_content pr2">
+    <h1 class="head1 mb3">Slider</h1>
+    <h2 class="head2 mb1">Introduction</h2>
+    <p class="text3 mb5">
+      Slider can be used on a various ways like product page, hero section on
+      homepage or even as a simple sidebar card.
+    </p>
+    <!-- 1st example -->
+    <h2 class="head2 mb1">Basic Use</h2>
+    <p class="text3 mb2">
+      Just like every other components use the html code below and thats it.The
+      default one comes with arrow buttons for changing the slide.
+    </p>
+    <div class="example-box mb2">
+      <div class="slider">
+        <div class="slider_slide">
+          <div class="slider_item">
+            <img src="/docs/assets/slider-img 1.jpg" alt="" />
+          </div>
+          <div class="slider_item">
+            <img src="/docs/assets/slider-img 2.jpg" alt="" />
+          </div>
+          <div class="slider_item">
+            <img src="/docs/assets/slider-img 3.jpg" alt="" />
+          </div>
+          <div class="slider_item">
+            <img src="/docs/assets/slider-img 4.jpg" alt="" />
+          </div>
+        </div>
+        <div class="slider_buttons">
+          <button class="slider_button1">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="slider_button2">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="slider_dots"></div>
+      </div>
+    </div>
+    <iframe
+      src="https://carbon.now.sh/embed/gtTsxxIoHYGhJiRPJECe"
+      style="
+        width: 680px;
+        height: 670px;
+        border: 0;
+        transform: scale(1);
+        overflow: hidden;
+      "
+      class="mb5"
+      sandbox="allow-scripts allow-same-origin"
+    >
+    </iframe>
+
+    <!-- 2nd example -->
+    <h2 class="head2 mb1">Auto SlideShow</h2>
+    <p class="text3 mb2">
+      Making the slideshow auto is very easy with the library just add an
+      attribute of 'slideShow' and add the interval in ms and done.
+    </p>
+    <div class="example-box mb2">
+      <div class="slider" slideShow="5000">
+        <div class="slider_slide">
+          <div class="slider_item">
+            <img src="/docs/assets/slider-img 1.jpg" alt="" />
+          </div>
+          <div class="slider_item">
+            <img src="/docs/assets/slider-img 2.jpg" alt="" />
+          </div>
+          <div class="slider_item">
+            <img src="/docs/assets/slider-img 3.jpg" alt="" />
+          </div>
+          <div class="slider_item">
+            <img src="/docs/assets/slider-img 4.jpg" alt="" />
+          </div>
+        </div>
+        <div class="slider_buttons">
+          <button class="slider_button1">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="slider_button2">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="slider_dots"></div>
+      </div>
+    </div>
+    <iframe
+      src="https://carbon.now.sh/embed/LWQbC2a7ypuFaLN0281f"
+      style="
+        width: 680px;
+        height: 670px;
+        border: 0;
+        transform: scale(1);
+        overflow: hidden;
+      "
+      class="mb5"
+      sandbox="allow-scripts allow-same-origin"
+    >
+    </iframe>
+
+    <!-- 3nd example -->
+    <h2 class="head2 mb1">Slide Show With Dots</h2>
+    <p class="text3 mb2">
+      Don't like side buttons, want something more modern dont worry we got you
+      covered.Simply add a class of 'slider--dots' and done now instead of side
+      buttons you would be using dots for slideshow <br />
+      <b>Note -</b> As of now you can only apply one tpe of buttons wether side
+      buttons or dots not both YET.
+    </p>
+    <div class="example-box mb2">
+      <div class="slider slider--dots">
+        <div class="slider_slide">
+          <div class="slider_item">
+            <img src="/docs/assets/slider-img 1.jpg" alt="" />
+          </div>
+          <div class="slider_item">
+            <img src="/docs/assets/slider-img 2.jpg" alt="" />
+          </div>
+          <div class="slider_item">
+            <img src="/docs/assets/slider-img 3.jpg" alt="" />
+          </div>
+          <div class="slider_item">
+            <img src="/docs/assets/slider-img 4.jpg" alt="" />
+          </div>
+        </div>
+        <div class="slider_buttons">
+          <button class="slider_button1">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="slider_button2">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="slider_dots"></div>
+      </div>
+    </div>
+    <iframe
+      src="https://carbon.now.sh/embed/nViWXJUj00UVsriShn1J"
+      style="
+        width: 680px;
+        height: 670px;
+        border: 0;
+        transform: scale(1);
+        overflow: hidden;
+      "
+      class="mb5"
+      sandbox="allow-scripts allow-same-origin"
+    >
+    </iframe>
+  </div>
+  <div class="docs_titles"></div>
+</div>

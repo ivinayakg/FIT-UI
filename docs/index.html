@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIT UI</title>
+    <script src="/JS/main.mjs" type="module" async></script>
+    <link rel="stylesheet" href="/frontend.css" />
+    <link rel="stylesheet" href="/docs/docs.css" />
+    <script src="./main.js" async></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_brand">
+        <h1 class="t2 primary-text">FIT UI</h1>
+      </div>
+
+      <div class="header_themeToggle"></div>
+
+      <button class="header_toggle">
+        <span class="header_burger"></span>
+        <span class="header_burger"></span>
+        <span class="header_burger"></span>
+      </button>
+
+      <div class="header_links">
+        <div class="header_link"><a class="t3" href="/">Home </a>></div>
+        <div class="header_link">
+          <a class="t3 link_active" href="/docs">Docs </a>>
+        </div>
+      </div>
+    </header>
+
+    <div class="section docs">
+      <div class="container">
+        <div class="docs_nav">
+          <button class="docs_link">Get Started</button>
+          <button class="docs_link">Alert</button>
+          <button class="docs_link">Avatar</button>
+          <button class="docs_link">Badge</button>
+          <button class="docs_link">Button</button>
+          <button class="docs_link">Cards</button>
+          <button class="docs_link">Grid</button>
+          <button class="docs_link">Image</button>
+          <button class="docs_link">Input</button>
+          <button class="docs_link">List</button>
+          <button class="docs_link">Modal</button>
+          <button class="docs_link">Navigation</button>
+          <button class="docs_link">Rating</button>
+          <button class="docs_link">Slider</button>
+          <button class="docs_link">Snackbar</button>
+        </div>
+        <div class="doc_current ml1">
+          <iframe
+            src="/docs/pages/get-started.html"
+            frameborder="0"
+            class="docs_frame"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
