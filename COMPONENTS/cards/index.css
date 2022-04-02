@@ -24,6 +24,25 @@
   right: 1rem;
 }
 
+.card--dismiss {
+  position: relative;
+}
+
+.card_dismiss {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.35);
+  color: blueviolet;
+  padding: 5px 7px;
+  border-radius: 50%;
+}
+
+.card--dismiss .card_dismiss {
+  display: block;
+  top: 7px;
+  right: 7px;
+}
+
 button {
   transition: none;
   border: none;
